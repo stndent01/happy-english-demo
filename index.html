@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy English Adventure</title>
+<link rel="stylesheet" href="style.css">
+<script src="jszip.min.js"></script>
+</head>
+<body><div id="root" class="app"><main class="hero center"><h1 class="homeTitle"><span class="homeTitleEn">Happy English Adventure</span></h1><p>遊戲載入中，請稍候...</p></main></div>
+<script>
+window.addEventListener('error',function(e){var r=document.getElementById('root');if(r){r.innerHTML='<main class="hero center"><h1>遊戲載入失敗</h1><p>請確認已解壓縮整個資料夾，且 index.html、app.js、data.js、style.css、jszip.min.js 都在同一層。</p><pre style="white-space:pre-wrap;text-align:left;background:#fff;padding:12px;border-radius:12px">'+(e.message||'未知錯誤')+'</pre></main>';}});
+window.addEventListener('unhandledrejection',function(e){var r=document.getElementById('root');if(r){r.innerHTML='<main class="hero center"><h1>遊戲載入失敗</h1><p>請確認已解壓縮整個資料夾後再開啟。</p><pre style="white-space:pre-wrap;text-align:left;background:#fff;padding:12px;border-radius:12px">'+((e.reason&&e.reason.message)||e.reason||'未知錯誤')+'</pre></main>';}});
+</script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
